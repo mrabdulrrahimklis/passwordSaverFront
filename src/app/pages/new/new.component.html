@@ -1,0 +1,27 @@
+<app-nav></app-nav>
+
+<div class="container">
+  <form class="margin-top-20">
+    <div class="form-group">
+      <label for="exampleInputUser">User</label>
+      <input type="text" class="form-control" id="exampleInputUser" aria-describedby="emailHelp" placeholder="Enter email" #user (keyup)="onKeyUpUser(user.value)">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputName">Name</label>
+      <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter email"  #name (keyup)="onKeyUpName(name.value)">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputLink">Link</label>
+      <input type="text" class="form-control" id="exampleInputLink" aria-describedby="emailHelp" placeholder="Enter email" #link (keyup)="onKeyUpLink(link.value)">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword">Password</label>
+      <input type="text" class="form-control" id="exampleInputPassword" aria-describedby="emailHelp" placeholder="Enter email" #password (keyup)="onKeyUpPass(password.value)">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputDate">Date</label>
+      <input type="text" class="form-control" id="exampleInputDate" aria-describedby="emailHelp" placeholder="Enter email" #date (keyup)="onKeyUpDate(date.value)">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="post()">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,9 @@
+.card {
+  display: inline-block !important;
+  margin: 20px;
+}
+.center-button {
+  color: white;
+  display: block;
+  margin: 100px auto;
+}

@@ -1,0 +1,14 @@
+<app-nav></app-nav>
+
+<div class="container">
+  <div *ngFor="let item of data" class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{item.date}}</h6>
+      <p class="card-text">{{item.user}}</p>
+      <p class="card-text">Password: {{item.password}}</p>
+      <a class="card-link">{{item.link}}</a>
+    </div>
+  </div>
+  <a class="center-button btn btn-primary" (click)="get()">Load Passwords</a>
+</div>
